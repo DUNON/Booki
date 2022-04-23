@@ -210,14 +210,14 @@ nav a:hover{
     flex: 2;
     height: 700px;
     background-color: #F2F2F2;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-right: 20px;
     padding: 10px;
 }
 .populaire{
     flex: 1;
     height: 700px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #F2F2F2;
     padding: 10px;
 }
@@ -233,12 +233,15 @@ nav a:hover{
     width: 33%;
     height: auto;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #FFFFFF;
     padding: 1%;
     margin-right: 20px;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px; 
+}
+.hebergement-card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 .hebergement-card img{
     width: 100%;
@@ -246,7 +249,7 @@ nav a:hover{
     background-size: cover;
     object-fit: cover;
     background-position: center;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 .list-populaires-card{
@@ -258,13 +261,17 @@ nav a:hover{
     display: flex;
     background-color: #FFFFFF;
     margin-bottom: 30px;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+.populaire-card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .populaire-card img{
     height: 100%;
     width: 40%;
     object-fit: cover;
-    border-radius: 10px 0 0 10px;
+    border-radius: 20px 0 0 20px;
 }
 .fiche-card{
     padding-left: 20px;
@@ -307,6 +314,10 @@ nav a:hover{
     .hebergement{
         padding:0 10%;
     }
+    .hebergement h2{
+        font-size: xx-large;
+        font-weight:bold;
+    }
     .list-hebergement-card{
         display: flex;
         flex-direction: column;
@@ -316,6 +327,11 @@ nav a:hover{
         box-sizing: border-box;
         line-height: 10px;
         margin-right: 0px; 
+        margin-bottom: 20px;
+    }
+    .hebergement-card:hover{
+        cursor: pointer;
+        transform: scale(1.05);
     }
     .hebergement-card img{
         width: 100%;
@@ -345,14 +361,18 @@ nav a:hover{
 .activites-card{
     width: 23%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+.activites-card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .activites-card img{
     width: 100%;
     height: 430px;
     object-fit: cover;
-    border-radius: 15px 15px 0 0 ;
+    border-radius: 20px 20px 0 0 ;
 }
 .hauteur-titre{
     height: 70px;
@@ -371,36 +391,49 @@ nav a:hover{
     flex-direction: column;
     justify-content: space-between;
 }
+
 .sup-card{
     height: auto;
-    border-radius: 0 0 15px 15px ;
+    border-radius: 0 0 20px 20px ;
     box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+.sup-card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .inf-card{
     height: auto;
-    border-radius: 0 0 15px 15px ;
+    border-radius: 0 0 20px 20px ;
     box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+.inf-card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .sup-card img{
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 15px 15px 0 0 ;
+    border-radius: 20px 20px 0 0 ;
 }
 .inf-card img{
     width: 100%;
     height: 130px;
     object-fit: cover;
-    border-radius: 15px 15px 0 0 ;
+    border-radius: 20px 20px 0 0 ;
 }
 
 @media all and (max-width: 768px)
 {
     .activites{
-        margin-top: 1150px;
+        margin-top: 1250px;
         height: 100%;
         width: 100%;
         padding:0 5%;
+    }
+    .activites h2{
+        font-size: xx-large;
+        font-weight:bold;
     }
     .block-activites{
         flex-direction: column;
@@ -412,8 +445,9 @@ nav a:hover{
         box-sizing: border-box;
         line-height: 10px;
         padding: 1%;
+        margin-top: 40px;
     }
-    .activites-card img{
+    .activites-card img,.sup-card img,.inf-card img{
         width: 100%;
         height: 65%;
         object-fit: cover;
@@ -422,6 +456,7 @@ nav a:hover{
     .double-activite-card{
         width: 100%;
         margin-top: 20px;
+        margin-bottom: 20px;
     }
     .sup-card{
         width: 100%;
@@ -429,13 +464,15 @@ nav a:hover{
         box-sizing: border-box;
         line-height: 10px;
         padding: 1%;
+        margin-bottom: 10px;
     }
     .inf-card{
         width: 100%;
         height: 270px;
         box-sizing: border-box;
         line-height: 10px;
-        padding: 1%;
+        padding: 1%; 
+        margin-bottom: 10px;   
     }
    
 }
