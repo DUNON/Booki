@@ -6,6 +6,8 @@ body{
 .container {
     max-width: 1200px;
     margin:auto;
+    display: flex;
+    flex-direction: column;
     
 }
 .color-bleu{
@@ -92,8 +94,9 @@ nav a:hover{
     width: 230px;
     height: 50px;
     font-size: 18px;
+    box-sizing: border-box;
     font-weight: bold;
-    border: none;
+    border: 1.5px solid #F2F2F2 ;
     outline: none;
     padding-left: 20px;
 }
@@ -147,6 +150,7 @@ nav a:hover{
 .filter-text{
     height: 50px;
     padding: 0 20px 0 20px;
+    font-weight: bold;
     display: flex;
     align-items: center;
    
@@ -298,7 +302,7 @@ nav a:hover{
         height: 200px;
     }
     .hebergement{
-        flex: none ;
+        flex: none;
         width: 90%;
         margin-right: 20px;
         background-color: #FFFFFF;
@@ -313,6 +317,7 @@ nav a:hover{
 {
     .hebergement{
         padding:0 10%;
+        height: auto;
     }
     .hebergement h2{
         font-size: xx-large;
@@ -426,7 +431,6 @@ nav a:hover{
 @media all and (max-width: 768px)
 {
     .activites{
-        margin-top: 1250px;
         height: 100%;
         width: 100%;
         padding:0 5%;
@@ -481,7 +485,7 @@ footer{
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .box-footer{
     display: flex;
